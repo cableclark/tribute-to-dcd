@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Megrim&display=swap');
+
+:root {
+  --headings: 'Megrim', cursive;
+  --main-text: 'Cabin', sans-serif;
+}

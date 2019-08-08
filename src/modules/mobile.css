@@ -1,0 +1,252 @@
+*, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--darkest);
+  color: var(--midlight);
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  border: 0.1rem solid var(--lightest);;
+}
+
+h1,h2,h3,h4,h5 {
+  color: var(--color);
+  margin-bottom: 1.2rem;
+  font-family: var(--headings);
+  text-align: center;
+}
+
+p {
+  margin: 2em 0em;
+  color: var(--color);
+  font-family: var(--main-text);
+}
+
+.mobileNav {
+ margin: 1.2rem 1.2rem;
+ z-index: 2;
+}
+
+#logo {
+  width: 100px;
+  height: 50px;
+}
+
+nav ul {
+  display:  flex;
+  position:fixed;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background-color: rgba(26, 25, 25, 0.85);
+  padding: 0px 0px;
+  height: 80vh;
+  width: 0%;
+  left: -300px;
+  opacity: 0%;
+  margin-top:0;
+  font-weight: 200;
+  transition: all 0.12s ease-in;
+ }
+
+nav li {
+    margin: 1em 0;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    color: white;
+  }
+
+.mobileNav {
+   display:flex;
+   justify-content: space-between;
+
+}
+
+/* Mobile nav functionality */
+
+#ham_menu {
+  display: block;
+  cursor: pointer;
+
+ }
+
+.visibleMenu {
+  left: 0px;
+  width: 100%;
+  opacity: 100%;
+  color: white;
+  box-shadow: 3px 3px 20px 1px rgba(12, 12, 12, 0.5);
+  z-index: 300;
+}
+
+.hamburger {
+   transition: transform 0.1s ease-in-out, transform-origin 0.1s ease-in-out, opacity 0.3s ease-out;
+   cursor: pointer;
+   background-color: var(--lightcolor);
+   width: 21px;
+   height: 1px;
+   display: block;
+   margin: 6px 10px;
+ }
+
+.rotate {
+   transform-origin: top left;
+   transform: rotate(45deg) translate(0px, -2px);
+ }
+
+.derotate {
+   transform-origin: bottom left;
+   transform: rotate(-45deg) translate( 1px, 0px);
+ }
+
+.disapear {
+   opacity:0;
+ }
+
+/* Hero Area */
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  padding: 1.2rem;
+
+}
+
+#hero-title {
+  order: 0;
+}
+
+#hero-image {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#hero-title h1 {
+    margin-top: 1rem;;
+    font-size: 3em;
+}
+
+#hero-title p {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+#hero-image {
+  order: -1;
+}
+
+#down-button {
+  order:2;
+  flex-shrink: 0;
+  background-color: var(--dark);
+  width: 70px;
+  height: 70px;
+  border-radius: 50% 50%;
+  margin: 0 auto;
+  z-index: 10;
+  opacity: 0.5;
+}
+
+/* Bio area */
+#bio section {
+  z-index: -1;
+}
+#bio {
+  background-color: var(--lightest);
+  padding: 1.2rem;
+  z-index: -1;
+}
+
+#bio p, #bio h2 {
+  color:var(--darkest);
+  z-index: -1;
+}
+
+
+
+/* Disocgraphy area*/
+
+#discograpy {
+  background-color: var(--darkest);
+  padding: 1.2rem;
+
+}
+
+
+#discograpy p, #discograpy h2 {
+  color:var(--light);
+}
+
+
+#discograpy img {
+  filter: sepia(1);
+  transition: all 0.04s ease-in;
+}
+
+#discograpy img:hover {
+  transform: scale(1.01);
+  box-shadow: 5px 5px 3px #121212;
+  filter: sepia(0);
+  cursor: pointer;
+}
+
+/* Tour Area */
+#tour {
+  padding: 1.2rem;
+  background-color: var(--lightest);
+}
+
+table {
+  width: 96%;
+}
+
+tr {
+  background-color: var(--light);
+  display:flex;
+  margin-bottom: 1em;
+  flex-direction: column;
+  font-size: 1.1rem;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+tr:first-of-type {
+  display:none;
+}
+
+td:first-of-type {
+  color: var(--color);
+}
+
+td:first-of-type::before {
+  content: "Date: "
+}
+
+td:nth-of-type(2n)::before {
+  content: "City: "
+}
+td:nth-of-type(3n)::before {
+  content: "Venue: ";
+}
+
+/* Footer Area */
+
+footer {
+  background-color: var(--dark);
+  margin: 0 0;
+  padding: 1.2rem;
+}
+
+#footer {
+  margin-bottom: 1.2rem;
+}
