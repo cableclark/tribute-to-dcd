@@ -57,8 +57,8 @@ nav ul {
   background-color: rgba(26, 25, 25, 0.85);
   padding: 0px 0px;
   height: 80vh;
-  width: 0%;
-  left: 100%;
+  width: 100%;
+  opacity:0;
   margin-top:0;
   font-weight: 400;
   font-size: 1.6em;
@@ -67,7 +67,6 @@ nav ul {
 
 nav li {
     margin: 1rem 0;
-    width: 100%;
     position: relative;
     top: 1.8rem;
     text-align: center;
@@ -97,9 +96,9 @@ nav li {
 
 .visibleMenu {
   left: 0%;
-  width: 100%;
   color: white;
   box-shadow: 3px 3px 20px 1px rgba(12, 12, 12, 0.5);
+  opacity: 1;
   z-index: 300;
   background: rgba(5,5,5, 0.9);
 
