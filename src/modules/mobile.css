@@ -53,22 +53,31 @@ nav ul {
   left: -300px;
   opacity: 0%;
   margin-top:0;
-  font-weight: 200;
+  font-weight: 400;
+  font-size: 1.6em;
   transition: all 0.12s ease-in;
  }
 
 nav li {
-    margin: 1em 0;
+    margin: 1rem 0;
     width: 100%;
+    position: relative;
+    top: 2.6rem;
     text-align: center;
     list-style: none;
     color: white;
+    opacity:0.5;
+    transition: all 0.12s ease-in 1s;
   }
+
+.animated-li {
+    top: 0rem;
+    opacity: 1;
+}
 
 .mobileNav {
    display:flex;
-   justify-content: space-between;
-
+   justify-content: center;
 }
 
 /* Mobile nav functionality */
@@ -76,7 +85,6 @@ nav li {
 #ham_menu {
   display: block;
   cursor: pointer;
-
  }
 
 .visibleMenu {
@@ -86,12 +94,14 @@ nav li {
   color: white;
   box-shadow: 3px 3px 20px 1px rgba(12, 12, 12, 0.5);
   z-index: 300;
-  background: rgb(255,255,255);
-  ;
+  background: rgba(5,5,5, 0.9);
+
 }
+
 svg {
   width: 100%;
 }
+
 .hamburger {
    transition: transform 0.1s ease-in-out, transform-origin 0.1s ease-in-out, opacity 0.3s ease-out;
    cursor: pointer;
@@ -122,7 +132,7 @@ svg {
   display: flex;
   flex-direction: column;
   padding: 1.2rem;
-  height:100vh;
+  height:80vh;
 }
 
 #hero-title {
