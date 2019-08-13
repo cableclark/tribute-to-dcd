@@ -1,6 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -27,8 +24,8 @@
        gradientTransform="matrix(3.7795276,0,0,3.7795276,-439.69034,-175.64403)"
        x1="80.639969"
        y1="142.71745"
-       x2="282.05295"
-       y2="142.71745" />
+       x2="251.75117"
+       y2="180.53088" />
     <linearGradient
        id="linearGradient3955"
        inkscape:collect="always">
@@ -81,9 +78,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="90.584927"
-     inkscape:cy="117.94552"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="4.3866531"
+     inkscape:cy="258.41389"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -101,7 +98,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -115,6 +112,6 @@
        id="path4743"
        d="M 39.899807,60.626759 V 620.84355 A 380.23114,289.8725 0 0 0 245.517,666.89433 380.23114,289.8725 0 0 0 438.89786,626.22637 V 60.626759 Z"
        style="display:inline;opacity:1;fill:url(#linearGradient15155);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.39788079;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4282)"
-       transform="matrix(0.26458333,0,0,0.26458333,-5.7373693,118.73425)" />
+       transform="matrix(0.28937801,0,0,0.27116518,-11.776758,114.56354)" />
   </g>
 </svg>

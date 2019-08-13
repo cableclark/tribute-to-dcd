@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab&display=swap');
 
 :root {
-  --headings: 'Roboto+Condensed', sans-serif;
-  --main-text: 'Roboto', sans-serif;
+  --headings: 'Roboto', sans-serif;
+  --main-text: 'Roboto+Slab', sans-serif;
 }

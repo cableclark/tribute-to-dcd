@@ -7,6 +7,7 @@ body {
   color: var(#ffffff);
   background: rgb(0,0,0);
   background: linear-gradient(45deg, rgba(0,0,0,1) 89%, rgba(54,54,54,1) 100%);
+  font-family: var(--headings);
 }
 
 img {
@@ -29,7 +30,6 @@ h1 {
   letter-spacing: 0.2rem;
   position: relative;
   top: -5.2rem;
-
 }
 
 p {
@@ -39,8 +39,8 @@ p {
 }
 
 .mobileNav {
- margin: 1.2rem 1.2rem;
- z-index: 2;
+   margin: 1.2rem 1.2rem;
+   z-index: 2;
 }
 
 #logo {
@@ -49,8 +49,9 @@ p {
 }
 
 nav ul {
-  display:  flex;
-  position:fixed;
+  display: hidden;
+  z-index: -200;
+  position: fixed;
   flex-direction: column;
   align-content: center;
   justify-content: center;
@@ -62,23 +63,23 @@ nav ul {
   margin-top:0;
   font-weight: 400;
   font-size: 1.6em;
-  transition: all 0.5s ease-in;
+  transition: opacity 0.1s ease-in;
  }
 
 nav li {
     margin: 1rem 0;
     position: relative;
-    top: 1.8rem;
+    transform: translateY(10px);
     text-align: center;
     list-style: none;
     color: white;
-    opacity:0.0;
-    transition: all 0.6s ease-in 0.1s;
+    opacity: 0.2;
+    transition: transform 0.2s ease-in, opacity 0.2s ease-in-out;
   }
 
 .animated-li {
-    top: 0rem;
-    opacity: 1;
+    transform: translateY(0px);
+    opacity: 9;
 }
 
 .mobileNav {
@@ -95,26 +96,24 @@ nav li {
  }
 
 .visibleMenu {
-  left: 0%;
+  display: flex;
   color: white;
   box-shadow: 3px 3px 20px 1px rgba(12, 12, 12, 0.5);
   opacity: 1;
   z-index: 300;
   background: rgba(5,5,5, 0.9);
-
 }
 
 #sub-mobile {
    position: absolute;
-   z-index: -10;
+   transform: translateY(-5%);
+   z-index: -300;
    width: 100%;
-   height: 80%;
    margin: 0 0;
-   overflow: hidden;
 }
 
 .hamburger {
-   transition: transform 0.1s ease-in-out, transform-origin 0.1s ease-in-out, opacity 0.3s ease-out;
+   transition: transform 0.1s ease-in-out, transform-origin 0.1s ease-in-out, opacity 0.2s ease-out;
    cursor: pointer;
    background-color: var(--lightcolor);
    width: 25px;
@@ -143,23 +142,21 @@ nav li {
   display: flex;
   flex-direction: column;
   padding: 1.2rem;
-  height: 90vh;
-  justify-content: space-around;
+  height: 80vh;
+  justify-content: center;
   align-items: center;
-}
-
-#hero-title {
-  order: 0;
 }
 
 #hero-image {
   width: 90%;
+  height: 100%;
   margin: 0 auto;
 }
 
-#hero-title h1 {
-    margin-top: 1rem;;
-    font-size: 1.7rem;
+#hero-title  {
+  transform: translateY(19%);
+  height: 100%;
+  font-size: 1rem;
 }
 
 #hero-title p {
@@ -176,7 +173,6 @@ nav li {
 #down-arrow {
 
 }
-
 
 #hero-image {
   order: -1;
