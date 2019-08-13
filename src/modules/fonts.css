@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin|Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab&display=swap');
 
 :root {
-  --headings: 'Megrim', cursive;
-  --main-text: 'Cabin', sans-serif;
+  --headings: 'Roboto+Condensed', sans-serif;
+  --main-text: 'Roboto', sans-serif;
 }

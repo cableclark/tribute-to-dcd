@@ -24,6 +24,14 @@ h1,h2,h3,h4,h5 {
   text-align: center;
 }
 
+h1 {
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  position: relative;
+  top: -5.2rem;
+
+}
+
 p {
   margin: 2em 0em;
   color: var(--color);
@@ -50,8 +58,7 @@ nav ul {
   padding: 0px 0px;
   height: 80vh;
   width: 0%;
-  left: -300px;
-  opacity: 0%;
+  left: 100%;
   margin-top:0;
   font-weight: 400;
   font-size: 1.6em;
@@ -62,12 +69,12 @@ nav li {
     margin: 1rem 0;
     width: 100%;
     position: relative;
-    top: 2.6rem;
+    top: 1.8rem;
     text-align: center;
     list-style: none;
     color: white;
-    opacity:0.5;
-    transition: all 0.12s ease-in 1s;
+    opacity:0.0;
+    transition: all 0.4s ease-in 0.1s;
   }
 
 .animated-li {
@@ -85,12 +92,12 @@ nav li {
 #ham_menu {
   display: block;
   cursor: pointer;
+  margin-top: 1.5rem;
  }
 
 .visibleMenu {
-  left: 0px;
+  left: 0%;
   width: 100%;
-  opacity: 100%;
   color: white;
   box-shadow: 3px 3px 20px 1px rgba(12, 12, 12, 0.5);
   z-index: 300;
@@ -98,28 +105,33 @@ nav li {
 
 }
 
-svg {
-  width: 100%;
+#sub-mobile {
+   position: absolute;
+   top: -10%;
+   left: -10%;
+   z-index: -10;
+   width: 120%;
+   margin: 0 0;
 }
 
 .hamburger {
    transition: transform 0.1s ease-in-out, transform-origin 0.1s ease-in-out, opacity 0.3s ease-out;
    cursor: pointer;
    background-color: var(--lightcolor);
-   width: 21px;
-   height: 1px;
+   width: 25px;
+   height: 2px;
    display: block;
-   margin: 6px 10px;
+   margin: 6px 6px;
  }
 
 .rotate {
    transform-origin: top left;
-   transform: rotate(45deg) translate(0px, -2px);
+   transform: rotate(45deg) translate(0px, -1px);
  }
 
 .derotate {
    transform-origin: bottom left;
-   transform: rotate(-45deg) translate( 1px, 0px);
+   transform: rotate(-45deg) translate( 0px, 0px);
  }
 
 .disapear {
@@ -132,7 +144,9 @@ svg {
   display: flex;
   flex-direction: column;
   padding: 1.2rem;
-  height:80vh;
+  height: 90vh;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #hero-title {
@@ -140,7 +154,7 @@ svg {
 }
 
 #hero-image {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -159,6 +173,11 @@ svg {
   font-family: var(--main-text);
   font-weight: 400;
 }
+
+#down-arrow {
+
+}
+
 
 #hero-image {
   order: -1;
