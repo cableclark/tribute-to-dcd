@@ -17,31 +17,32 @@ img {
   width: 100%;
 }
 
-h1,h2,h3,h4,h5 {
+h1, h2, h3, h4,h5 {
   color: var(--color);
-
-  margin-bottom: 1.3rem;
   font-family: var(--headings);
   text-align: center;
+  letter-spacing: 0.07rem;
 }
 
 h1 {
   font-weight: 400;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   position: relative;
   top: -5.2rem;
 }
 
 h2 {
   font-size: 2rem;
-  margin-top: 1.6rem;
-  margin-bottom: 2rem;
-
+  font-style: var(--headings);
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  padding: 2rem 2rem;
 }
 
 p {
   color: #000000;
   font-family: var(--main-text);
+  font-size: 0.9rem;
   margin-bottom: 2rem;
   line-height: 2rem;
 }
@@ -184,8 +185,9 @@ nav li {
 
 }
 #bio > div {
-  padding: 2rem 3rem;
+  padding: 1.5rem 3rem;
   background-color:#FFCC00;
+  font-family: var(--main-text);
 }
 
 #bio p, #bio h2 {
@@ -193,9 +195,10 @@ nav li {
 }
 
 #bio > #hidden  {
-  display: block;
+  display:none;
   background-color:#000000;
 }
+
 
 #hidden p, #hidden h1 {
     color: white;
@@ -213,22 +216,43 @@ nav li {
 /* Disocgraphy area*/
 
 #discograpy {
-  background-color: var(--darkest);
-  padding: 1.2rem;
+  color: var(--darkest);
+  background-color:#EEEEEE;
+  padding-bottom: 3rem;
 }
 
-#discograpy p, #discograpy h2 {
-  color:#d2d2d2;
+#discograpy h2  {
+  color: #FFCC00;
 }
 
 #discograpy h3 {
-  font-family: var(--main-text);
+  text-transform: uppercase;
+  color: black;
+  font-style: var(--headings);
   font-size: 1.4rem;
+  margin: 0em 2rem;
+  margin-bottom: 1.5rem;
+}
+
+
+#discograpy p  {
+  color: black;
+  padding: 0 2rem;
+  font-family: var(--main-text);
+
+}
+
+hr {
+  border-top: 3px solid #FFCC00;
+  width: 50%;
+  margin: 1.5rem auto;
+
 }
 
 #discograpy img {
-  filter: sepia(1);
-  transition: all 0.04s ease-in;
+  /* filter: sepia(1);
+  transition: all 0.04s ease-in; */
+  margin-bottom: 1rem;
 }
 
 #discograpy img:hover {
@@ -239,14 +263,21 @@ nav li {
 }
 
 /* Tour Area */
-#tour {
-  padding: 1.2rem;
-  background-color: var(--lightest);
+#tour,#tour > h2 {
+  margin: 0 0;
+  background-color: black;
+  color: #FFCC00;
+}
+
+#triangle {
+  display: block;
+  width:30%;
+  margin: 1.5rem auto;
+  margin-bottom: 0;
 }
 
 table {
-  width: 96%;
-  margin-left: 1rem;
+  width: 100%;
 }
 
 tr {

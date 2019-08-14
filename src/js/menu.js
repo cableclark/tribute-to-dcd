@@ -10,15 +10,20 @@ function toggleMenu() {
 };
 
 function hideMenu () {
+
   menu.classList.toggle("visibleMenu");
 
   toggleItems();
   }
 
 function toggleItems () {
+
   listLinks.forEach(function (item) {
+
     item.classList.toggle("animated-li");
+
   });
+
 };
 
 ham.onclick =  toggleMenu;
