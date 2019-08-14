@@ -14,13 +14,13 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
-  border: 0.1rem solid var(--lightest);;
+  width: 100%;
 }
 
 h1,h2,h3,h4,h5 {
   color: var(--color);
-  margin-bottom: 1.2rem;
+
+  margin-bottom: 1.3rem;
   font-family: var(--headings);
   text-align: center;
 }
@@ -32,10 +32,23 @@ h1 {
   top: -5.2rem;
 }
 
+h2 {
+  font-size: 2rem;
+  margin-top: 1.6rem;
+  margin-bottom: 2rem;
+
+}
+
 p {
-  margin: 2em 0em;
-  color: var(--color);
+  color: #000000;
   font-family: var(--main-text);
+  margin-bottom: 2rem;
+  line-height: 2rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 .mobileNav {
@@ -50,21 +63,24 @@ p {
 
 nav ul {
   display: flex;
-  z-index: -200;
   position: fixed;
+  z-index: 300;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   background-color: rgba(26, 25, 25, 0.85);
   padding: 0px 0px;
-  height: 85vh;
+  height: 82vh;
   transform: translateY(-10%);
   width: 100%;
   margin-top:0;
-  font-weight: 400;
-  font-size: 1.6em;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  opacity: 0;
+  font-size: 1.6rem;
   background: rgba(5,5,5, 0.9);
   box-shadow: 3px 3px 20px 1px rgba(12, 12, 12, 0.5);
+  pointer-events: none;
  }
 
 nav li {
@@ -75,11 +91,13 @@ nav li {
     list-style: none;
     color: white;
     opacity: 0;
-    transition:  transform 0.3s ease-in;
+    pointer-events: none;
+    transition: transform 0.3s ease-in;
   }
 
   .visibleMenu {;
-    z-index: 300;
+    pointer-events: fill;
+    opacity: 1;
   }
 
 .animated-li {
@@ -108,9 +126,7 @@ nav li {
    margin: 6px 6px;
  }
 
-
 /* Hero Area */
-
 
 #hero {
   display: flex;
@@ -119,14 +135,15 @@ nav li {
   height: 70vh;
   justify-content: center;
   align-items: center;
+
 }
 
 #sub-mobile {
    position: absolute;
-   transform: translateY(-5%);
-   z-index: -300;
+   transform: translateY(-5%);;
    width: 100%;
    margin: 0 0;
+   z-index: -100;
 }
 
 #hero-image {
@@ -152,10 +169,6 @@ nav li {
   font-weight: 400;
 }
 
-#down-arrow {
-
-}
-
 #hero-image {
   order: -1;
 }
@@ -163,19 +176,39 @@ nav li {
 /* Bio area */
 #bio section {
   z-index: -1;
+
 }
+
 #bio {
-  background-color: var(--lightest);
-  padding: 1.2rem;
   z-index: -1;
+
+}
+#bio > div {
+  padding: 2rem 3rem;
+  background-color:#FFCC00;
 }
 
 #bio p, #bio h2 {
-  color:var(--darkest);
   z-index: -1;
 }
 
+#bio > #hidden  {
+  display: block;
+  background-color:#000000;
+}
 
+#hidden p, #hidden h1 {
+    color: white;
+}
+
+#hidden button {
+  background-color:#000000;
+  padding: 0.5rem 1.5rem;
+  color: #FFCC00;
+  border: 1px solid  #FFCC00;
+  width: 100%;
+  margin: 0 auto;
+}
 
 /* Disocgraphy area*/
 
@@ -230,8 +263,6 @@ tr {
 tr:first-of-type {
   display:none;
 }
-
-
 
 td:first-of-type::before {
   content: "Date: "
