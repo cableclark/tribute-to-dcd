@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Roboto&display=swap');
 
 :root {
-  --headings: 'Roboto', sans-serif;
+  --headings: 'Merriweather', sans-serif;
   --main-text: 'Roboto', sans-serif;
 }
