@@ -45,6 +45,7 @@ p {
   font-size: 0.9rem;
   margin-bottom: 2rem;
   line-height: 2rem;
+  padding: 0 2rem;
 }
 
 a {
@@ -93,17 +94,17 @@ nav li {
     color: white;
     opacity: 0;
     pointer-events: none;
-    transition: transform 0.3s ease-in;
+    transition: transform  0.3s ease-in, opacity 0.3s ease-in;
   }
 
-  .visibleMenu {;
+.visibleMenu {;
     pointer-events: fill;
     opacity: 1;
   }
 
 .animated-li {
     transform: translateY(0px);
-    opacity: 10;
+    opacity: 1;
 }
 
 .mobileNav {
@@ -133,10 +134,9 @@ nav li {
   display: flex;
   flex-direction: column;
   padding: 1.2rem;
-  height: 70vh;
+  height: 80vh;
   justify-content: center;
   align-items: center;
-
 }
 
 #sub-mobile {
@@ -185,7 +185,6 @@ nav li {
 
 }
 #bio > div {
-  padding: 1.5rem 3rem;
   background-color:#FFCC00;
   font-family: var(--main-text);
 }
@@ -194,24 +193,29 @@ nav li {
   z-index: -1;
 }
 
-#bio > #hidden  {
-  display:none;
+.hidden {
   background-color:#000000;
+
 }
 
-
-#hidden p, #hidden h1 {
+.hidden > p, .hidden> h2 {
     color: white;
 }
 
-#hidden button {
+.hidden button {
   background-color:#000000;
   padding: 0.5rem 1.5rem;
   color: #FFCC00;
   border: 1px solid  #FFCC00;
-  width: 100%;
-  margin: 0 auto;
+  display: block;
+  width: 80%;
+  margin: 2rem auto;
 }
+
+.hidden button:hover {
+    background-color: #FFCC00;
+    color:#000000;
+    }
 
 /* Disocgraphy area*/
 
@@ -237,13 +241,13 @@ nav li {
 
 #discography p  {
   color: black;
-  padding: 0 2rem;
+
   font-family: var(--main-text);
 
 }
 
 hr {
-  border-top: 3px solid #FFCC00;
+  border: 2px solid #FFCC00;
   width: 50%;
   margin: 1.5rem auto;
 
@@ -255,12 +259,12 @@ hr {
   margin-bottom: 1rem;
 }
 
-#discography img:hover {
+/* #discography img:hover {
   transform: scale(1.01);
   box-shadow: 5px 5px 3px #121212;
   filter: sepia(0);
   cursor: pointer;
-}
+} */
 
 /* Tour Area */
 #tour,#tour > h2 {
@@ -309,11 +313,14 @@ td:nth-of-type(3n)::before {
 /* Footer Area */
 
 footer {
-  background-color: var(--dark);
-  margin: 0 0;
-  padding: 1.2rem;
+  margin-bottom: 1.2rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10% 5%;
+
 }
 
-#footer {
-  margin-bottom: 1.2rem;
+footer img{
+  width: 50px;
 }
