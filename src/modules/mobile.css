@@ -215,17 +215,17 @@ nav li {
 
 /* Disocgraphy area*/
 
-#discograpy {
+#discography {
   color: var(--darkest);
   background-color:#EEEEEE;
   padding-bottom: 3rem;
 }
 
-#discograpy h2  {
+#discography h2  {
   color: #FFCC00;
 }
 
-#discograpy h3 {
+#discography h3 {
   text-transform: uppercase;
   color: black;
   font-style: var(--headings);
@@ -235,7 +235,7 @@ nav li {
 }
 
 
-#discograpy p  {
+#discography p  {
   color: black;
   padding: 0 2rem;
   font-family: var(--main-text);
@@ -249,13 +249,13 @@ hr {
 
 }
 
-#discograpy img {
+#discography img {
   /* filter: sepia(1);
   transition: all 0.04s ease-in; */
   margin-bottom: 1rem;
 }
 
-#discograpy img:hover {
+#discography img:hover {
   transform: scale(1.01);
   box-shadow: 5px 5px 3px #121212;
   filter: sepia(0);
