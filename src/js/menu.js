@@ -14,6 +14,7 @@ function hideMenu () {
   menu.classList.toggle("visibleMenu");
 
   toggleItems();
+
   }
 
 function toggleItems () {

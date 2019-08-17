@@ -1,0 +1,81 @@
+@media all and (min-width: 720px) {
+
+  .hamburger {
+    display: none;
+   }
+  h2 {
+    font-size: 5rem;
+    padding: 5rem;
+  }
+
+  p {
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 2rem  5rem;;
+  }
+  nav ul {
+    opacity: 1;
+    background-color: rgba(0,0,0,0.0);
+    flex-direction: row;
+    z-index: 300;
+    height: 5%;
+    position: absolute;
+    align-content:space-between;
+    justify-content: center;
+    letter-spacing: 0rem;
+    pointer-events: all;
+    box-shadow: none;
+    margin: 0 0;
+    top:90%;
+  }
+
+  nav li {
+    opacity: 1;
+    background-color: rgba(0,0,0,0.0);
+    margin: 1rem 1rem;
+    transform:  translateY(0px);
+  }
+
+  .mobileNav {
+     margin: 0 0;
+     z-index: 2;
+  }
+
+  #up {
+      width: 3%;
+      right: 3%;
+      bottom: 3%;
+    }
+/* Hero Area */
+
+  #hero {
+    height: 100vh;
+   }
+
+   #sub-mobile {
+     height:  90%;
+   }
+
+   h1 {
+
+   }
+/*Bio area */
+  #bio {
+    display: flex;
+    height: 100vh;
+  }
+
+  #bio p {
+    padding-bottom: 20%;
+  }
+
+  #bio  div {
+    flex-grow: 1;
+  }
+
+  #bio img {
+    flex-grow: 1;
+
+  }
+
+ }

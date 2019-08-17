@@ -27,8 +27,6 @@ h1, h2, h3, h4,h5 {
 h1 {
   font-weight: 400;
   letter-spacing: 0.1rem;
-  position: relative;
-  top: -5.2rem;
 }
 
 h2 {
@@ -50,17 +48,30 @@ p {
 
 a {
   text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #FFCC00;
+}
+
+
+#up {
+  position: fixed;
+  right: 5%;
+  bottom: 3%;
+  width: 10%;
 }
 
 .mobileNav {
-   margin: 1.2rem 1.2rem;
-   z-index: 2;
-}
+     margin: 1.2rem 1.2rem;
+     z-index: 2;
+     position: absolute;
+     right: 0.5rem;
+     display: flex;
+     justify-content: flex-end;
+  }
 
-#logo {
-  width: 100px;
-  height: 50px;
-}
 
 nav ul {
   display: flex;
@@ -71,18 +82,24 @@ nav ul {
   justify-content: center;
   background-color: rgba(26, 25, 25, 0.85);
   padding: 0px 0px;
-  height: 82vh;
+  height: 100vh;
   transform: translateY(-10%);
   width: 100%;
   margin-top:0;
   font-weight: bold;
   letter-spacing: 0.3rem;
   opacity: 0;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   background: rgba(5,5,5, 0.9);
   box-shadow: 3px 3px 20px 1px rgba(12, 12, 12, 0.5);
   pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
  }
+
+.visibleMenu {;
+     pointer-events:all;
+     opacity: 1;
+   }
 
 nav li {
     margin: 1rem 0;
@@ -90,26 +107,17 @@ nav li {
     transform: translateY(10px);
     text-align: center;
     list-style: none;
-    color: white;
     opacity: 0;
     pointer-events: none;
-    transition: transform  0.3s ease-in, opacity 0.3s ease-in;
+    transition: transform  0.3s ease-in-out, opacity 0.3s ease-in-out;
   }
 
-.visibleMenu {;
-    pointer-events: fill;
-    opacity: 1;
-  }
 
 .animated-li {
     transform: translateY(0px);
     opacity: 1;
 }
 
-.mobileNav {
-  display: flex;
-  justify-content: flex-end;
-}
 
 /* Mobile nav functionality */
 
@@ -133,7 +141,7 @@ nav li {
   display: flex;
   flex-direction: column;
   padding: 1.2rem;
-  height: 86vh;
+  height: 100vh;
   justify-content:center;
   align-items: center;
 
@@ -147,7 +155,6 @@ nav li {
    z-index: -100;
 }
 
-
 #hero h1 {
   opacity: .8;
   font-size: 1rem;
@@ -156,7 +163,6 @@ nav li {
 
 #hero p {
     font-size: 0.8rem;
-     transform: translateY(-180%);;
     text-align: center;
     color: white;
     opacity: .8;
@@ -175,7 +181,6 @@ nav li {
 /* Bio area */
 #bio section {
   z-index: -1;
-
 }
 
 #bio {
