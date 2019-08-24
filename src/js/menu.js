@@ -2,6 +2,7 @@ let ham = document.querySelector("#ham_menu");
 let menu = document.querySelector("nav ul");
 let listLinks = document.querySelectorAll("nav ul li");
 let subMobile= document.querySelector(".sub-mobile");
+let heroImage= document.querySelector("#hero img");
 
 function toggleMenu() {
 
@@ -35,6 +36,8 @@ function animateItems () {
     item.classList.add("load");
 
   });
+
+  heroImage.classList.add("display");
 
 };
 

@@ -3,6 +3,7 @@
   .hamburger {
     display: none;
    }
+
   h2 {
     font-size: 5rem;
     padding: 5rem;
@@ -63,6 +64,9 @@
     height: 90%;
  }
 
+ #hero img {
+   width: 60%;
+ }
 
 /*Bio area */
   #bio {
@@ -95,7 +99,6 @@ display:flex;
   height: 100%;
   margin: 0 5rem;
 }
-
 
 
  }

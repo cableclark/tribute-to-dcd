@@ -8,7 +8,6 @@ body {
   background: rgb(0,0,0);
   background: linear-gradient(45deg, rgba(0,0,0,1) 89%, rgba(54,54,54,1) 100%);
   font-family: var(--headings);
-
 }
 
 img {
@@ -44,7 +43,7 @@ p {
   font-family: var(--main-text);
   font-size: 0.9rem;
   line-height: 1.8rem;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 0rem;
 }
 
 a {
@@ -80,7 +79,6 @@ hr {
      display: flex;
      justify-content: flex-end;
   }
-
 
 nav ul {
   display: flex;
@@ -172,8 +170,20 @@ nav li {
 #hero h1 {
   opacity: .8;
   font-size: 1rem;
-
 }
+
+.hidden {
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: scale(1.2);
+  transition: opacity 0.9s ease-in-out 0.3s, transform  0.4s ease-in-out 0.3s;
+}
+
+.display {
+    opacity: 1;
+    transform: scale(1);
+  }
+
 
 #hero p {
     font-size: 0.8rem;
@@ -208,6 +218,7 @@ nav li {
 
 #bio p, #bio h2 {
   z-index: -1;
+  margin: 0rem 2.5rem;
 }
 
 #bio p {
@@ -217,10 +228,8 @@ nav li {
     color: white;
   }
 
-
 .page {
   background-color:#000000;
-
 }
 
 .page  p, .page h2 {
@@ -250,17 +259,16 @@ nav li {
   padding-top: 2rem;
   padding-bottom: 3rem;
   overflow: hidden;
-
 }
 
 .disco-tainer {
   width: calc(100vw * 9);
+  height: 100vh;
   display: flex;
 }
 
 article {
-width: 100vw;
-
+width: 100vw
 }
 
 #discography h2  {
@@ -279,29 +287,19 @@ width: 100vw;
 #discography p  {
   color: black;
   font-family: var(--main-text);
-
 }
 
 .text {
-  margin: 0rem 3rem;
+  margin: 0rem 2.5rem;
 }
 
-#discography  img {
+article  img {
   margin-bottom: 1rem;
-  width: 100px;
-
 }
 
 #discography a {
     color: #FFCC00;
   }
-
-/* #discography img:hover {
-  transform: scale(1.01);
-  box-shadow: 5px 5px 3px #121212;
-  filter: sepia(0);
-  cursor: pointer;
-} */
 
 /* Tour Area */
 #tour,#tour > h2 {
