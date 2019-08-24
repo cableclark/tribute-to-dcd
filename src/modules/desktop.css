@@ -6,13 +6,15 @@
   h2 {
     font-size: 5rem;
     padding: 5rem;
+    padding-top: 6rem;
   }
 
   p {
     font-size: 2rem;
     line-height: 3rem;
-    padding: 2rem  5rem;;
+    padding: 0rem  5rem;
   }
+
   nav ul {
     opacity: 1;
     background-color: rgba(0,0,0,0.0);
@@ -30,10 +32,16 @@
   }
 
   nav li {
-    opacity: 1;
+    opacity: 0;
     background-color: rgba(0,0,0,0.0);
     margin: 1rem 1rem;
-    transform:  translateY(0px);
+    transform:  translateY(10px);
+    transition: transform 0.3s ease-in 1s, opacity 0.3s ease-in 1s;
+  }
+
+  .load {
+      opacity:1;
+      transform: translateY(0px);
   }
 
   .mobileNav {
@@ -49,16 +57,13 @@
 /* Hero Area */
 
   #hero {
-    height: 100vh;
    }
 
-   #sub-mobile {
-     height:  90%;
-   }
+.sub-mobile {
+    height: 90%;
+ }
 
-   h1 {
 
-   }
 /*Bio area */
   #bio {
     display: flex;
@@ -66,6 +71,8 @@
   }
 
   #bio p {
+    padding-left: 12%;
+    padding-right: 12%;
     padding-bottom: 20%;
   }
 
@@ -75,7 +82,20 @@
 
   #bio img {
     flex-grow: 1;
-
   }
+
+/* Discography area */
+.flexed {
+display:flex;
+
+}
+
+#discography img {
+  width:100%;
+  height: 100%;
+  margin: 0 5rem;
+}
+
+
 
  }

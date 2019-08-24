@@ -8,6 +8,7 @@ body {
   background: rgb(0,0,0);
   background: linear-gradient(45deg, rgba(0,0,0,1) 89%, rgba(54,54,54,1) 100%);
   font-family: var(--headings);
+
 }
 
 img {
@@ -56,6 +57,14 @@ a:hover {
 }
 
 
+hr {
+  border: 1px solid #FFCC00;
+  width: 50%;
+  margin: 1.5rem auto;
+}
+
+/* navigation */
+
 #up {
   position: fixed;
   right: 5%;
@@ -82,7 +91,7 @@ nav ul {
   justify-content: center;
   background-color: rgba(26, 25, 25, 0.85);
   padding: 0px 0px;
-  height: 100vh;
+  height: 100%;
   transform: translateY(-10%);
   width: 100%;
   margin-top:0;
@@ -112,12 +121,10 @@ nav li {
     transition: transform  0.3s ease-in-out, opacity 0.3s ease-in-out;
   }
 
-
 .animated-li {
     transform: translateY(0px);
     opacity: 1;
 }
-
 
 /* Mobile nav functionality */
 
@@ -144,15 +151,22 @@ nav li {
   height: 100vh;
   justify-content:center;
   align-items: center;
-
 }
 
-#sub-mobile {
+.sub-mobile {
    position: absolute;
    transform: translateY(-5%);;
    width: 100%;
    margin: 0 0;
    z-index: -100;
+   opacity: 0;
+   transform: translateY(-90%);
+   transition: transform 0.8s ease-out, opacity 1s ease-in;
+}
+
+.sub-mobile-open {
+  transform: translateY(-20%);
+  opacity: 1;
 }
 
 #hero h1 {
@@ -235,6 +249,18 @@ nav li {
   background-color:#EEEEEE;
   padding-top: 2rem;
   padding-bottom: 3rem;
+  overflow: hidden;
+
+}
+
+.disco-tainer {
+  width: calc(100vw * 9);
+  display: flex;
+}
+
+article {
+width: 100vw;
+
 }
 
 #discography h2  {
@@ -250,24 +276,20 @@ nav li {
   margin-bottom: 1.5rem;
 }
 
-
 #discography p  {
   color: black;
   font-family: var(--main-text);
 
 }
 
-hr {
-  border: 1px solid #FFCC00;
-  width: 50%;
-  margin: 1.5rem auto;
+.text {
+  margin: 0rem 3rem;
 }
 
-#discography img {
-  /* filter: sepia(1);
-  transition: all 0.04s ease-in; */
+#discography  img {
   margin-bottom: 1rem;
-  width: 80%;
+  width: 100px;
+
 }
 
 #discography a {
