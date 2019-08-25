@@ -176,7 +176,7 @@ nav li {
   margin-bottom: 2rem;
   opacity: 0;
   transform: scale(1.2);
-  transition: opacity 0.9s ease-in-out 0.3s, transform  0.4s ease-in-out 0.3s;
+  transition: opacity 0.9s ease-in-out 0.6s, transform  0.4s ease-in-out 0.6s;
 }
 
 .display {
@@ -211,6 +211,7 @@ nav li {
   z-index: -1;
 
 }
+
 #bio > div {
   background-color:#FFCC00;
   font-family: var(--main-text);
@@ -224,6 +225,7 @@ nav li {
 #bio p {
   padding-bottom: 2rem;
 }
+
 #bio a {
     color: white;
   }
@@ -249,7 +251,7 @@ nav li {
 .page button:hover {
     background-color: #FFCC00;
     color:#000000;
-    }
+}
 
 /* Disocgraphy area*/
 
@@ -268,7 +270,7 @@ nav li {
 }
 
 article {
-width: 100vw
+  width: 100vw
 }
 
 #discography h2  {

@@ -1,0 +1,18 @@
+@media all and (min-width: 620px) {
+
+  #bio > div{
+    padding: 0rem 0rem;
+  }
+
+  #bio h2 {
+      font-size: 3rem;
+      line-height: 3rem;
+  }
+
+  #bio p {
+      font-size: 1rem;
+      line-height: 3rem;
+      margin: 2rem 3rem;
+  }
+
+}
