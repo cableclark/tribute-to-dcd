@@ -203,17 +203,16 @@ nav li {
 }
 
 /* Bio area */
-#bio section {
+#bio {
   z-index: -1;
+  background-color:#FFCC00;
 }
 
 #bio {
   z-index: -1;
-
 }
 
 #bio > div {
-  background-color:#FFCC00;
   font-family: var(--main-text);
 }
 
