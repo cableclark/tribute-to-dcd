@@ -5,8 +5,8 @@
 
 body {
   color: var(#ffffff);
-  background: rgb(0,0,0);
-  background: linear-gradient(45deg, rgba(54,54,54,1) 89%, rgba(104,104,104,1) 100%);
+   background: #FFCC00;
+  /* background: linear-gradient(45deg, rgba(20,20,20,1) 89%, rgba(4,4,4,1) 100%); */
   font-family: var(--headings);
 }
 
@@ -171,6 +171,7 @@ nav li {
   font-size: 1.4rem;
   opacity: 0;
   transform: translateX(20%);
+  color: #FFCC00;
   transition: all 0.4s ease-out 1.2s;
 }
 
