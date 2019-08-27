@@ -1,5 +1,6 @@
 let subMobile= document.querySelector(".sub-mobile");
 let heroImage= document.querySelector("#hero img");
+let heroTitle= document.querySelector(".hero");
 
 
 function animateItems () {
@@ -11,6 +12,7 @@ function animateItems () {
   });
 
   heroImage.classList.add("display");
+  heroTitle.classList.add("display-h1");
 
 };
 

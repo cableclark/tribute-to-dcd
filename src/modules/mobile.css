@@ -6,7 +6,7 @@
 body {
   color: var(#ffffff);
   background: rgb(0,0,0);
-  background: linear-gradient(45deg, rgba(0,0,0,1) 89%, rgba(54,54,54,1) 100%);
+  background: linear-gradient(45deg, rgba(54,54,54,1) 89%, rgba(104,104,104,1) 100%);
   font-family: var(--headings);
 }
 
@@ -62,7 +62,7 @@ hr {
   margin: 1.5rem auto;
 }
 
-/* navigation */
+/* Navigation */
 
 #up {
   position: fixed;
@@ -167,16 +167,24 @@ nav li {
   opacity: 1;
 }
 
-#hero h1 {
-  opacity: .8;
-  font-size: 1rem;
+.hero  {
+  font-size: 1.4rem;
+  opacity: 0;
+  transform: translateX(20%);
+  transition: all 0.4s ease-out 1.2s;
 }
+
+.display-h1 {
+  opacity: 1;
+  transform:  translateX(0);
+}
+
 
 .hidden {
   margin-bottom: 2rem;
   opacity: 0;
   transform: scale(1.2);
-  transition: opacity 0.9s ease-in-out 0.6s, transform  0.4s ease-in-out 0.6s;
+  transition: opacity 0.9s ease-in-out 1.2s, transform  0.4s ease-in-out 1.2s;
 }
 
 .display {
@@ -186,10 +194,10 @@ nav li {
 
 
 #hero p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: center;
-    color: white;
-    opacity: .8;
+    color: #AAAAAA;
+    padding-bottom: 2rem;
 }
 
 #hero-title span {

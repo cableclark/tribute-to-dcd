@@ -45,6 +45,10 @@
       transform: translateY(0px);
   }
 
+  .hero {
+    font-size: 5rem;
+  }
+
   .mobileNav {
      margin: 0 0;
      z-index: 2;
@@ -58,13 +62,6 @@
 /* Hero Area */
 
 
-.sub-mobile {
-    height: 90%;
- }
-
- #hero img {
-   width: 50%;
- }
 
 /*Bio area */
  #bio {

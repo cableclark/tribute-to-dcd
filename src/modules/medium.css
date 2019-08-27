@@ -1,6 +1,17 @@
 @media all and (min-width: 620px) {
 
+  .sub-mobile {
+      height: 120%;
+   }
+
+   #hero img {
+     width: 80%;
+   }
 /* Bio Area*/
+
+  .hero {
+    font-size: 3rem;
+  }
 
   #bio h2 {
       font-size: 3rem;
