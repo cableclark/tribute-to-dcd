@@ -40,6 +40,19 @@
     transition: transform 0.3s ease-in 1s, opacity 0.3s ease-in 1s;
   }
 
+  .up {
+    position: fixed;
+    right: 100px;
+    bottom: 50px;
+    width: 50px;
+  }
+
+  .upper {
+    text-align: center;
+    right: 170px;
+    bottom: 100px;
+  }
+
   .load {
       opacity:1;
       transform: translateY(0px);
@@ -95,15 +108,23 @@
 
 
 /* Discography area */
-.flexed {
-  display:flex;
-}
+  .flexed {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 
-#discography img {
-  width:100%;
-  height: 100%;
-  margin: 0 5rem;
-}
+  .disco-tainer {
+    display: block;
+  }
+
+  article img {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+  }
+
 
 
  }

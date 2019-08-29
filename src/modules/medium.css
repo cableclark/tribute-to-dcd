@@ -7,6 +7,21 @@
    #hero img {
      width: 80%;
    }
+   .up {
+     right: 5%;
+     bottom: 3%;
+     width: 20px;
+   }
+
+   .upper {
+     text-align: center;
+     right: 5%;
+     bottom: 5%;
+   }
+
+
+
+
 /* Bio Area*/
 
   .hero {

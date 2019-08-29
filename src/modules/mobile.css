@@ -64,11 +64,17 @@ hr {
 
 /* Navigation */
 
-#up {
+.up {
   position: fixed;
   right: 5%;
   bottom: 3%;
-  width: 10%;
+  width: 20px;
+}
+
+.upper {
+  text-align: center;
+  right: 5%;
+  bottom: 5%;
 }
 
 .mobileNav {
@@ -149,6 +155,7 @@ nav li {
   height: 100vh;
   justify-content:center;
   align-items: center;
+  overflow: hidden;
 }
 
 .sub-mobile {
@@ -181,7 +188,6 @@ nav li {
   transform:  translateX(0);
 }
 
-
 .hidden {
   margin-bottom: 2rem;
   opacity: 0;
@@ -193,7 +199,6 @@ nav li {
     opacity: 1;
     transform: scale(1);
   }
-
 
 #hero p {
     font-size: 1rem;
@@ -263,23 +268,20 @@ nav li {
 }
 
 /* Disocgraphy area*/
-
 #discography {
-  color: var(--darkest);
-  background-color:#EEEEEE;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
-  overflow: hidden;
+  color: #FFCC00;
+  background-color: black;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .disco-tainer {
-  width: calc(100vw * 9);
-  height: 100vh;
-  display: flex;
+  margin: 0 auto;
 }
 
 article {
-  width: 100vw
+  margin: 0 2rem;
+
 }
 
 #discography h2  {
@@ -287,25 +289,27 @@ article {
 }
 
 #discography h3 {
+  color: #FFCC00;
   text-transform: uppercase;
-  color: black;
-  font-style: var(--headings);
-  font-size: 1.4rem;
-  margin: 0em 2rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+  margin: 2rem 0;
 }
 
 #discography p  {
-  color: black;
+  max-width: 500px;
+  margin: 0 auto;
+  color: white;
   font-family: var(--main-text);
+  margin-bottom: 1rem;
 }
 
 .text {
-  margin: 0rem 2.5rem;
+  margin: 3rem auto;
 }
 
-article  img {
-  margin-bottom: 1rem;
+article img {
+  width: 70%;
+  margin: 0 auto;
 }
 
 #discography a {
@@ -314,7 +318,8 @@ article  img {
 
 /* Tour Area */
 #tour,#tour > h2 {
-  margin: 0 0;
+  margin: 0rem 0;
+  padding: 1rem;
   background-color: black;
   color: #FFCC00;
 }
@@ -322,8 +327,8 @@ article  img {
 #triangle {
   display: block;
   width:30%;
-  margin: 1.5rem auto;
-  margin-bottom: 0;
+  padding: 1.5rem auto;
+  margin: 0 auto;
 }
 
 table {
