@@ -175,7 +175,7 @@ nav li {
   opacity: 1;
 }
 
-.hero  {
+.hero {
   font-size: 1.4rem;
   opacity: 0;
   transform: translateX(20%);
@@ -227,6 +227,11 @@ nav li {
   z-index: -1;
 }
 
+#bio-img {
+  padding-bottom: 2rem;
+  width: 90%;
+}
+
 #bio > div {
   font-family: var(--main-text);
 }
@@ -272,11 +277,12 @@ nav li {
   color: #FFCC00;
   background-color: black;
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 0
 }
 
 .disco-tainer {
-  margin: 0 auto;
+  margin:  auto 0;
+  margin-bottom: -2em;
 }
 
 article {
@@ -304,7 +310,7 @@ article {
 }
 
 .text {
-  margin: 3rem auto;
+  margin: 0rem auto;
 }
 
 article img {
@@ -327,7 +333,7 @@ article img {
 #triangle {
   display: block;
   width:30%;
-  padding: 1.5rem auto;
+  padding: 0rem auto;
   margin: 0 auto;
 }
 
